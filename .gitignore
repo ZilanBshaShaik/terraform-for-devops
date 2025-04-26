@@ -1,0 +1,5 @@
+# ignore files
+*.hcl
+*.tfstate
+*.backup
+*.terraform
