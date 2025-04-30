@@ -53,6 +53,7 @@ resource "aws_instance" "my_instance" {
   for_each = tomap({
     TWS-Junoon-Automate-Micro  = "t2.micro"
     TWS-Junoon-Automate-Medium = "t2.medium"
+    TWS-Junoon-Automate-Small  = "t2.small"
   }) # meta argument
   key_name        = aws_key_pair.my_key.key_name
   security_groups = [aws_security_group.my_security_group.name]
