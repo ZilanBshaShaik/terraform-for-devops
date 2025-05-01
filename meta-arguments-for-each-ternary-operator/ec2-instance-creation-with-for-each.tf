@@ -67,6 +67,7 @@ resource "aws_instance" "my_instance" {
   }
 
   tags = {
-    Name = "server ${each.key}"
+    Name        = each.key
+    Environment = var.env
   }
 }
